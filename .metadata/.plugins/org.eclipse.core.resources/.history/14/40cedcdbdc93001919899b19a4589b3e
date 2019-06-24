@@ -1,0 +1,5 @@
+package com.kitri.admin.model.service;
+
+public interface AdminService {
+	public String getMemberList(Map<String,String> map);
+}

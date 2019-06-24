@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;main.java.com.kitri.hello&apos; to &apos;com.kitri.hello&apos;&#x0D;&#x0A;- Original project: &apos;springs&apos;&#x0D;&#x0A;- Original element: &apos;springs/src/main.java.com.kitri.hello&apos;&#x0D;&#x0A;- Renamed element: &apos;springs/src/com.kitri.hello&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;main.java.com.kitri.hello&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;main.java.com.kitri.hello" name="com.kitri.hello" qualified="false" references="true" stamp="1560992628481" textual="false" version="1.0"/>
+</session>

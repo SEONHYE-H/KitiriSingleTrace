@@ -1,0 +1,12 @@
+package com.kitri.cafe.board.service;
+
+import com.kitri.cafe.board.model.AlbumDto;
+
+public interface AlbumService {
+	
+	int writeArticle(AlbumDto albumDto);
+	java.util.List<AlbumDto> listArticle();
+	viewArticle();
+	modifyArticle();
+	deleteArticle();
+}

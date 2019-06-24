@@ -1,0 +1,29 @@
+package com.kitri.cafe.admin.board.controller;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.kitri.cafe.admin.board.service.BoardAdminService;
+
+@Controller
+@RequestMapping("/boardadmin")
+public class BoardAdminController {
+	
+	private static Logger logger = LoggerFactory.getLogger(BoardAdminController.class);
+	
+	@Autowired
+	BoardAdminService boardAdminService;
+	
+	@RequestMapping("/boardmenu")
+	public String boardMenu(@RequestParam(name="ccode", defaultValue = "0") int ccode) {
+		boardAdminService.
+		logger.info("boardmenu");
+		return "";
+	}
+
+	
+}

@@ -1,0 +1,13 @@
+cafe
+
+	- src
+	
+	- webapp
+		index.jsp
+		
+		WEB-INF
+			-views : jsp
+			
+			
+	
+	

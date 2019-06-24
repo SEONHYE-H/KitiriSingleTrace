@@ -1,0 +1,5 @@
+package com.kitri.sqlmap;
+
+public class MyBatisConfiguration {
+
+}

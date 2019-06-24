@@ -1,0 +1,20 @@
+package com.kitri.cafe.board.controller;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+@Controller
+@RequestMapping("/reboard")
+public class ReboardController {
+	Logger logger = LoggerFactory.getLogger(ReboardController.class);
+	
+	@RequestMapping(value ="/write", method= RequestMethod.GET)
+	public void write() {
+		logger.debug("write");
+		
+	}
+}

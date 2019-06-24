@@ -1,0 +1,13 @@
+package com.kitri.cafe.board.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/reboard")
+public class ReboardController {
+
+	public String write() {
+		return "reboard/write";
+	}
+}

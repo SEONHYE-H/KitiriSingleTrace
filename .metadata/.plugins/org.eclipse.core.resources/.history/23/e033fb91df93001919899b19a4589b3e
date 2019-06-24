@@ -1,0 +1,44 @@
+package com.kitri.admin.controller;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Map;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.kitri.admin.model.service.AdminServiceImple;
+import com.kitri.util.MoveUrl;
+import com.kitri.util.SiteConstance;
+
+@Controller
+@RequestMapping("/admin")
+public class AdminController {
+
+	@RequestMapping("mvmemberlist.kitri")
+	public String mvmemberlist(@RequestParam Map<String, String> map) {
+		String key = map.get("key");
+		String word = map.get("word");
+		return "admin/member/memberlist";
+	}
+	
+	@RequestMapping("admin.kitri")
+	public String getmemberlist() {
+		if ("getmemberlist".equals(act)) {
+			String key = request.getParameter("key");
+			String word= request.getParameter("word");
+			
+			String resultXML = AdminServiceImple.getAdminServiceImple().getMemberList(key, word);
+			response.setContentType("text/xml;charset=UTF-8");
+			PrintWriter out = response.getWriter();
+			out.print(resultXML);
+		}
+	}
+}

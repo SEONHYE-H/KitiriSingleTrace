@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="write"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="write"/>
+			<item value="boardmenu "/>
+			<item value="boardmenu"/>
+			<item value="BoardListDto"/>
+			<item value="driverClass"/>
+			<item value="mybatis"/>
+			<item value="MemoDto"/>
+			<item value="Article"/>
+			<item value="BoardDto"/>
+			<item value="AlbumDto"/>
+			<item value="delete"/>
+			<item value="AlbumService"/>
+			<item value="BoardTypeDto"/>
+			<item value="BoardAdminDao"/>
+			<item value="&lt;%=root%&gt;"/>
+		</list>
+		<list key="replacehistory">
+			<item value="ReboardDto"/>
+			<item value="Memo"/>
+			<item value="MemoDto"/>
+			<item value="BoardDto"/>
+			<item value="BbsDto"/>
+			<item value="${root}"/>
+			<item value="registerInfo"/>
+			<item value="adminDao"/>
+			<item value="memberDao"/>
+			<item value="memberDao."/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="996"/>
+		<item key="DIALOG_Y_ORIGIN" value="422"/>
+		<item key="DIALOG_WIDTH" value="288"/>
+		<item key="DIALOG_HEIGHT" value="390"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+</section>

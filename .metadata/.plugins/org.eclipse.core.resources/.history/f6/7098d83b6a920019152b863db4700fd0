@@ -1,0 +1,10 @@
+package com.kitri.hello.model.dao;
+
+import java.util.Calendar;
+
+public interface HelloDao {
+
+	String getGreeting();
+
+
+}

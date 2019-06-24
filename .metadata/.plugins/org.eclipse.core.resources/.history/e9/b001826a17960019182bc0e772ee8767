@@ -1,0 +1,18 @@
+package com.kitri.cafe.admin.board.dao;
+
+import java.util.*;
+
+import com.kitri.cafe.admin.board.model.BoardListDto;
+
+public interface BoardAdminDao {
+	
+	List<BoardListDto> getBoardMenu(); //모든 게시판 가져오기
+	
+	List<CategoryDto>getCategoryList();
+	void makeCategory(CategoryDto categoryDto);
+	
+	getBoardTypeList(); //게시판의 형식
+	getBoardMenuList(int ccode); //게시판의 이름
+	makeBoard();
+
+}

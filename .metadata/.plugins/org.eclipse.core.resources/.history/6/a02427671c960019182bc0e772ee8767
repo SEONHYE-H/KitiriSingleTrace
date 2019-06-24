@@ -1,0 +1,11 @@
+package com.kitri.cafe.board.model;
+
+public class BbsDto {
+
+	private int bseq;
+	private String orignFile;
+	private String saveFile;
+	private String saveFolder;
+	private int fileSize;
+	
+}

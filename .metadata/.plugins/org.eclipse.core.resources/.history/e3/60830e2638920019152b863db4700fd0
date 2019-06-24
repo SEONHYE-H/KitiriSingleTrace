@@ -1,0 +1,11 @@
+package com.kitri.hello.controller;
+
+import org.springframework.web.servlet.ModelAndView;
+
+public class HelloController {
+	
+	public ModelAndView greeting() {
+		ModelAndView mav = new ModelAndView();
+		return mav;
+	}
+}

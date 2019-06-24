@@ -1,0 +1,12 @@
+package com.kitri.cafe.board.model;
+
+public class ReboardDto extends BoardDto {
+	private int resq;
+	private int ref;
+	private int lev;
+	private int step;
+	private int pseq;
+	private int reply;
+	
+
+}

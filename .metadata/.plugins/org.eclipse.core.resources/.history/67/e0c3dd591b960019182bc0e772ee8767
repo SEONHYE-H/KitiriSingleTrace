@@ -1,0 +1,40 @@
+package com.kitri.cafe.board.service;
+
+import java.util.List;
+import java.util.Map;
+
+import com.kitri.cafe.board.model.MemoDto;
+
+public class MemoServiceImpl implements MemoService {
+
+	@Override
+	public int writeArticle(MemoDto memoDto) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public List<MemoDto> listArticle(Map<String, String> parameter) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public MemoDto viewArticle(int seq) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int modifyArticle(MemoDto memoDto) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void deleteArticle(int seq) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

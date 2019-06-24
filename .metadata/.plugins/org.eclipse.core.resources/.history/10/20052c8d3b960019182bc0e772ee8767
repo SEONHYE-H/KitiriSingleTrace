@@ -1,0 +1,20 @@
+package com.kitri.cafe.admin.board.controller;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+@RequestMapping("/boardadmin")
+public class BoardAdminController {
+	Logger Logger = LoggerFactory.getLogger(BoardAdminController.class);
+	@RequestMapping("/boardmenu")
+	public String boardMenu(@RequestParam(name="ccode", defaultValue = "0") int ccode) {
+		Logger.info("boardmenu");
+		return "";
+	}
+
+	
+}

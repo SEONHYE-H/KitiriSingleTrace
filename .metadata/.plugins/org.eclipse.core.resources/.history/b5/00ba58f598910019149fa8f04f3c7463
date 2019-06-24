@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.kitri.admin.model.dao.AdminDao">
+	<select id="getMemberList" parameterMap="map" resultType="memberdetaildto">
+		#{key} #{word}
+			select m.name, m.id, m.emilid, m.em
+			if(word != null && !word.isEmpty() ) {
+				if("id".equals(key)) {
+					sql.append("and m.id = ? \n");
+				}else {
+					sql.append("and d."+key+"like '%'||?||'%'  \n");
+				}
+			}
+			pstmt = conn.prepareStatement(sql.toString());
+			if(word != null && !word.isEmpty())
+				pstmt.setString(1, map.get("word"));
+			
+	</select>
+</mapper>

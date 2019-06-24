@@ -1,0 +1,25 @@
+package com.kitri.admin.model.dao;
+
+import java.sql.*;
+import java.util.*;
+
+import com.kitri.member.model.MemberDetailDto;
+
+public class AdminDaoImple implements AdminDao {
+	private static AdminDaoImple adminDaoImple;
+
+	static {
+		adminDaoImple = new AdminDaoImple();
+	}
+	private AdminDaoImple() {}
+	public static AdminDaoImple getAdminDao() {
+		return adminDaoImple;
+	}
+
+	@Override
+	public List<MemberDetailDto> getMemberList(Map<String, String> map) {
+		return null;
+	}
+	
+
+}

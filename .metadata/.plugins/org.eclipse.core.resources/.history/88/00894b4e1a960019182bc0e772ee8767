@@ -1,0 +1,12 @@
+package com.kitri.cafe.board.model;
+
+import java.util.List;
+import java.util.Map;
+
+public class BoardDto {
+	int writeArticle(BoardDto boardDto);
+	List<BoardDto> listArticle(Map<String, String> parameter);
+	BoardDto viewArticle(int seq);
+	int modifyArticle(BoardDto boardDto);
+	void deleteArticle(int seq);
+}

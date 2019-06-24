@@ -1,0 +1,10 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ include file = "/WEB-INF/views/commons/template/top.jsp" %>
+<div>
+	<c:forEach var="board" items="${boardmenu }">
+		<p>${board.cname}</p>
+		<div>${board.bname }</div>
+	</c:forEach>
+</div>
+<%@ include file = "/WEB-INF/views/commons/template/bottom.jsp" %>
